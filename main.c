@@ -92,7 +92,6 @@ int gerador_de_senhas_fortes(){
     printf("Qual será o comprimento da senha?(8-32): ");
     fgets(buffer, sizeof(buffer), stdin);
     sscanf(buffer, "%d", &comprimento);
-    getchar(); 
   
     if(comprimento < 8 || comprimento > 32){
       printf("Comprimento inválido, Usando 12 caracteres.\n");
